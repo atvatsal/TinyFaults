@@ -1,0 +1,16 @@
+net no.,con,type,fanout,fanin,fanin1,fanin2
+1,gat,and,1,2,14,15
+14,gat,inpt,1,0,0,0
+15,gat,inpt,1,0,0,0
+2,gat,inpt,2,0,0,0
+3,gat,inpt,1,0,0,0
+4,gat,inpt,1,0,0,0
+5,fan,from,2,0,0,0
+6,fan,from,2,0,0,0
+7,gat,or,1,2,1,5
+8,gat,or,1,2,6,3
+9,gat,nor,2,2,8,4
+10,fan,from,9,0,0,0
+11,fan,from,9,0,0,0
+12,gat,or,1,2,7,10
+13,gat,and,0,2,12,11
